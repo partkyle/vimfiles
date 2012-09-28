@@ -37,6 +37,9 @@ set hidden
 "turn on syntax highlighting
 syntax on
 
+"always show status line
+set laststatus=2
+
 "color
 set bg=light
 colorscheme solarized
