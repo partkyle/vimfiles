@@ -2,6 +2,8 @@
 " This must be first, because it changes other options as a side effect.
 set nocompatible
 
+let mapleader=","
+
 " TODO: this may not be in the correct place. It is intended to allow overriding <Leader>.
 " source ~/.vimrc.before if it exists.
 if filereadable(expand("~/.vimrc.before"))
@@ -35,11 +37,16 @@ set hidden
 "turn on syntax highlighting
 syntax on
 
+"color
+set bg=light
+colorscheme solarized
+
 " ================ Search Settings  =================
 
 set incsearch        "Find the next match as we type the search
 set hlsearch         "Hilight searches by default
 set viminfo='100,f1  "Save up to 100 marks, enable capital marks
+set smartcase
 
 " ================ Turn Off Swap Files ==============
 
@@ -51,8 +58,8 @@ set nowb
 " Keep undo history across sessions, by storing in file.
 " Only works all the time.
 
-silent !mkdir ~/.vim/backups > /dev/null 2>&1
-set undodir=~/.vim/backups
+silent !mkdir ~/.vim-backups > /dev/null 2>&1
+set undodir=~/.vim-backups
 set undofile
 
 " ================ Indentation ======================
@@ -64,6 +71,7 @@ set shiftwidth=2
 set softtabstop=2
 set tabstop=2
 set expandtab
+set ff=unix
 
 filetype plugin on
 filetype indent on
@@ -95,10 +103,8 @@ set wildignore+=log/**
 set wildignore+=tmp/**
 set wildignore+=*.png,*.jpg,*.gif
 
-"
-
 " ================ Scrolling ========================
 
-set scrolloff=8         "Start scrolling when we're 8 lines away from margins
-set sidescrolloff=15
+set scrolloff=3         "Start scrolling when we're 8 lines away from margins
+set sidescrolloff=8
 set sidescroll=1
