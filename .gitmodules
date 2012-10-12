@@ -31,3 +31,6 @@
 [submodule "vim/bundle/skwp-vim-powerline"]
 	path = vim/bundle/skwp-vim-powerline
 	url = git@github.com:skwp/vim-powerline.git
+[submodule "vim/bundle/tpope-vim-surround"]
+	path = vim/bundle/tpope-vim-surround
+	url = https://github.com/tpope/vim-surround
