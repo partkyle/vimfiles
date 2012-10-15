@@ -28,3 +28,6 @@
 [submodule "vim/bundle/tpope-vim-surround"]
 	path = vim/bundle/tpope-vim-surround
 	url = https://github.com/tpope/vim-surround
+[submodule "vim/bundle/lunaru-vim-less"]
+	path = vim/bundle/lunaru-vim-less
+	url = git@github.com:lunaru/vim-less.git
