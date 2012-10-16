@@ -10,3 +10,4 @@ nnoremap <S-Space> <C-w>W
 
 nnoremap vv :vsplit<CR>
 nnoremap ss :split<CR>
+nnoremap tt :tabnew<CR>
