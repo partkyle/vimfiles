@@ -41,6 +41,9 @@ syntax on
 set laststatus=2
 
 "color
+let g:solarized_diffmode="high"
+let g:solarized_hitrail=1
+
 set bg=light
 colorscheme solarized
 
